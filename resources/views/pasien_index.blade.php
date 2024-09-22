@@ -35,7 +35,10 @@
                                         <td>{{ $item->umur }}</td>
                                         <td>{{ $item->foto }}</td>
                                         <td>{{ $item->alamat }}</td>
-                                        <td>Edit | Hapus</td>
+                                        <td>
+                                            <button type="button" class="btn btn-warning">Edit</button>
+                                            <button type="button" class="btn btn-danger">Hapus</button>
+                                        </td>
                                     </tr>
                                 @endforeach
                             </tbody>
