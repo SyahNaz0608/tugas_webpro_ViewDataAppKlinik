@@ -13,3 +13,11 @@
 - [x] Screenshot halaman welcome dengan tambahan fitur login
 - [x] Screenshot halaman dashboard
 - [x] Screenshot halaman data pasien dengan tambahan jenis kelamin, usia, foto, alamat dan tombol aksi
+
+### Tugas App-Klinik Pertemuan 8 View Data Pasien
+
+- [x] Screenshot halaman welcome
+- [x] Screenshot halaman Dashboard
+- [x] Screenshot halaman data pasien
+- [x] Screenshot halaman data pasien dengan penambahan data baru dengan foto
+- [x] Screenshot halaman data pasien dengan penambahan data baru dengan tiada foto
