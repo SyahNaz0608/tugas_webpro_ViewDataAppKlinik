@@ -33,11 +33,21 @@
                                         <td>{{ $item->nama }}</td>
                                         <td>{{ $item->jenis_kelamin }}</td>
                                         <td>{{ $item->umur }}</td>
-                                        <td>{{ $item->foto }}</td>
+                                        <?php $foto = $item->foto ? $item->foto : 'tiada.webp' ?>
+                                        <td><img src="/storage/images/{{ $foto }}" alt="Tiada Foto" width="100px" style="aspect-ratio: 1/1;"></td>
                                         <td>{{ $item->alamat }}</td>
                                         <td>
-                                            <button type="button" class="btn btn-warning">Edit</button>
-                                            <button type="button" class="btn btn-danger">Hapus</button>
+                                            <a href="/pasien/{{ $item->id }}/edit" class="btn btn-warning btn-sm ml-2">
+                                                Edit
+                                            </a>
+                                            <form action="/pasien/{{ $item->id }}" method="post" class="d-inline">
+                                                @csrf
+                                                @method('delete')
+                                                <button class="btn btn-danger btn-sm ml-2"
+                                                    onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">
+                                                    Hapus
+                                                </button>
+                                            </form>
                                         </td>
                                     </tr>
                                 @endforeach
