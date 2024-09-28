@@ -47,7 +47,7 @@ class PasienController extends Controller
         $pasien->alamat        = $requestData['alamat'];
         $pasien->save();
         if ($request->hasFile('foto')) {
-            $request->file('foto')->move('images/', $request->file('foto')->getClientOriginalName());
+            $request->file('foto')->move('storage/images/', $request->file('foto')->getClientOriginalName());
             $pasien->foto = $request->file('foto')->getClientOriginalName();
             $pasien->save();
         }
