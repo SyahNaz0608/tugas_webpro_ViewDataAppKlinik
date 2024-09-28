@@ -36,7 +36,7 @@ class PasienController extends Controller
             'umur'          => 'required|numeric',
             'jenis_kelamin' => 'required|in:laki-laki,perempuan',
             'alamat'        => 'nullable',
-            'foto'          => 'required|image|mimes:jpeg,png,jpg|max:5000'
+            'foto'          => 'nullable|image|mimes:jpeg,png,jpg,webp|max:5000'
         ]);
         // $pasien = new \App\Models\Pasien(); // membuat objek kosong
         $pasien = new Pasien(); // membuat objek kosong dengan cara import class Pasien

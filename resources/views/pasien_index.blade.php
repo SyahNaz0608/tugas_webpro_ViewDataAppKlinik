@@ -33,7 +33,7 @@
                                         <td>{{ $item->nama }}</td>
                                         <td>{{ $item->jenis_kelamin }}</td>
                                         <td>{{ $item->umur }}</td>
-                                        <?php $foto = $item->foto ? $item->foto : 'tiada.webp' ?>
+                                        <?php $foto = $item->foto ? $item->foto : 'misteri.jpg' ?>
                                         <td><img src="/storage/images/{{ $foto }}" alt="Tiada Foto" width="100px" style="aspect-ratio: 1/1;"></td>
                                         <td>{{ $item->alamat }}</td>
                                         <td>
