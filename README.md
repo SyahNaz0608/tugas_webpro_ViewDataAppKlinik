@@ -21,3 +21,14 @@
 - [x] Screenshot halaman data pasien
 - [x] Screenshot halaman data pasien dengan penambahan data baru dengan foto
 - [x] Screenshot halaman data pasien dengan penambahan data baru dengan tiada foto
+
+### Tugas PSTS App-klinik Edit dan Delete
+
+- [x] Screenshot halaman welcome
+- [x] Screenshot halaman Dashboard
+- [x] Screenshot halaman data pasien
+- [x] Screenshot halaman data pasien dengan penambahan data baru dengan foto
+- [x] Screenshot halaman data pasien dengan penambahan data baru dengan tiada foto
+- [x] Screenshot halaman Edit data pasien
+- [x] Screenshot halaman Edit data pasien dengan foto yang mau di ubah
+- [x] Screenshot halaman data pasien ketika di hapus
