@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Pasien;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class PasienController extends Controller
 {
@@ -67,7 +68,8 @@ class PasienController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $data['pasien'] = \App\Models\Pasien::findOrFail($id);
+        return view('pasien_edit', $data);
     }
 
     /**
@@ -75,7 +77,30 @@ class PasienController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $requestData = $request->validate([
+            'nama'          => 'required|min:3',
+            'no_pasien'     => 'required|unique:pasiens,no_pasien,' . $id,
+            'umur'          => 'required',
+            'alamat'        => 'nullable',
+            'jenis_kelamin' => 'required',
+            'foto'          => 'nullable|image|mimes:jpeg,png,jpg|max:10000'
+        ]);
+        $pasien = \App\Models\Pasien::findOrFail($id);
+        $pasien->fill($requestData);
+
+        if ($request->hasFile('foto')) {
+
+            if ($pasien->foto && file_exists(public_path('storage/images/' . $pasien->foto))) {
+                unlink(public_path('storage/images/' . $pasien->foto));
+            }
+
+            $fileName = time() . '_' . $request->file('foto')->getClientOriginalName();
+            $request->file('foto')->move(public_path('storage/images'), $fileName);
+            $pasien->foto = $fileName;
+        }
+
+        $pasien->save();
+        return redirect('/pasien')->with('pesan', 'Data sudah disimpan');
     }
 
     /**

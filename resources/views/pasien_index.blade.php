@@ -37,7 +37,7 @@
                                         <td><img src="/storage/images/{{ $foto }}" alt="Tiada Foto" width="100px" style="aspect-ratio: 1/1;"></td>
                                         <td>{{ $item->alamat }}</td>
                                         <td>
-                                            <a href="/pasien/{{ $item->id }}/edit" class="btn btn-warning btn-sm ml-2">
+                                            <a href="/pasien/{{ $item->id }}/edit" class="btn btn-warning btn-sm">
                                                 Edit
                                             </a>
                                             <form action="/pasien/{{ $item->id }}" method="post" class="d-inline">
