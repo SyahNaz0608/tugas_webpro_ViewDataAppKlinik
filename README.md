@@ -37,3 +37,4 @@ Pada Project sederhana ini para siswa student day Web Programming sedang mempela
 - [x] screenshot halaman home
 - [x] screenshot halaman data pasien
 - [x] screenshot halaman tambah data pasien
+- [x] update readme
