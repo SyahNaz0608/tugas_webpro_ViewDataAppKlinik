@@ -1,6 +1,6 @@
 # Eksplorasi Penggunaan Laravel 11
 
-## Pada Project sederhana ini para siswa student day Web Programming sedang mempelajari Basic CRUD Operation pada laravel 11
+Pada Project sederhana ini para siswa student day Web Programming sedang mempelajari Basic CRUD Operation pada laravel 11
 
 ### Tugas Laravel dari blank sampai ON
 
@@ -32,3 +32,8 @@
 - [x] Screenshot halaman Edit data pasien
 - [x] Screenshot halaman Edit data pasien dengan foto yang mau di ubah
 - [x] Screenshot halaman data pasien ketika di hapus
+
+### Tugas Template Layout
+- [x] screenshot halaman home
+- [x] screenshot halaman data pasien
+- [x] screenshot halaman tambah data pasien
