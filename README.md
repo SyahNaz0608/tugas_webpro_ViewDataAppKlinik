@@ -34,6 +34,14 @@ Pada Project sederhana ini para siswa student day Web Programming sedang mempela
 - [x] Screenshot halaman data pasien ketika di hapus
 
 ### Tugas Template Layout
+
 - [x] screenshot halaman home
 - [x] screenshot halaman data pasien
 - [x] screenshot halaman tambah data pasien
+
+### Tugas CRUD Poli
+
+- [x] Screenshot Hasil buat data baru pada halaman Poli create
+- [x] Screenshot baca data baru pada halaman Poli index
+- [x] Screenshot Edit data baru pada halaman Poli Edit dan hasil data diubah pada halaman Poli index
+- [x] Screenshot Hapus data baru pada halaman Poli index
